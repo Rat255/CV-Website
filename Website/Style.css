@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 50%,
+    rgba(136, 33, 194, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.Page-placement {
+  display: grid;
+  justify-content: center;
+  direction: ltr;
+  padding: 0%;
+  margin: 0%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  backdrop-filter: blur(13.3px);
+  box-shadow: inset rgba(255, 255, 255, 0.205) 0px 20px 20px -12px;
+}
+
+li {
+  padding: 20px;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.26);
+  padding: 16px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: transform 0.1s;
+  font-family: sans-serif;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  transform: scale(1.2);
+}
+
+.Circle-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 100px;
+}
+
+.Circle {
+  border-color: white;
+  border: white solid 2px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: #bbb;
+  position: relative;
+  overflow: hidden;
+  transition: transform 2s, box-shadow 2s;
+  perspective: 1000px;
+}
+
+.Circle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0px 40px rgba(255, 255, 255, 0.445);
+}
+
+.Circle-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Photos/cool-pfp-02.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Ensure the photo is also a circle */
+  backface-visibility: hidden;
+}
+
+.info-page {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  margin-top: 0%;
+  padding: auto;
+  mix-blend-mode: difference;
+  color: white;
+  font-family: sans-serif;
+}
+
+.GeneralText {
+  text-align: center;
+  mix-blend-mode: difference;
+  color: white;
+  font-family: sans-serif;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.image {
+  color: white;
+}
+
+.Space {
+  height: 50px;
+}
