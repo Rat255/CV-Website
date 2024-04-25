@@ -41,7 +41,6 @@ ul {
   height: 500px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   position: fixed;
   top: 50%;
@@ -81,10 +80,8 @@ li a:hover:not(.active) {
 }
 
 .Circle {
-  border-color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -162,7 +159,6 @@ h1 {
 .email {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   padding: 14px 25px;
   text-align: center;
@@ -192,15 +188,22 @@ h1 {
 }
 
 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   cursor: pointer;
   height: 260px;
   position: relative;
   width: 200px;
   transition: transform 0.1s;
+}
+
+.card span .material-symbols-outlined {
+  font-variation-settings: "FILL" 90, "wght" 400, "GRAD" 90, "opsz" 80;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .card:hover {
@@ -210,7 +213,6 @@ h1 {
 .About-me {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   cursor: pointer;
   height: 500px;
@@ -245,7 +247,6 @@ h1 {
     width: 500px;
     height: 80px;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     position: fixed;
     top: 90%;
