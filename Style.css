@@ -39,8 +39,9 @@ ul {
   padding: 0;
   width: 80px;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   position: fixed;
   top: 50%;
@@ -81,19 +82,20 @@ li a:hover:not(.active) {
 
 .Circle {
   border-color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   height: 300px;
   width: 300px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  transition: transform 2s, box-shadow 2s;
+  transition: transform 2s;
 }
 
 .Circle:hover {
   transform: scale(1.2);
-  box-shadow: inset rgba(255, 255, 255, 0.205) 0px 20px 20px -22px;
+
 }
 
 .Circle-photo {
@@ -131,7 +133,7 @@ li a:hover:not(.active) {
 
 h1 {
   margin-top: 0%;
-  padding: auto;
+  padding: 10px;
   mix-blend-mode: difference;
   color: rgba(255, 255, 255, 0.5);
   font-family: "Roboto", sans-serif;
@@ -158,8 +160,9 @@ h1 {
 }
 
 .email {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   padding: 14px 25px;
   text-align: center;
@@ -167,7 +170,7 @@ h1 {
   width: 100px;
   height: 30;
   display: inline-block;
-  color: rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.5);
   padding: 16px 0;
   text-decoration: none;
   transition: color 0.3s;
@@ -189,8 +192,9 @@ h1 {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   cursor: pointer;
   height: 260px;
@@ -204,8 +208,9 @@ h1 {
 }
 
 .About-me {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
   border-radius: 15px;
   cursor: pointer;
   height: 500px;
@@ -239,7 +244,8 @@ h1 {
     padding: 10px;
     width: 500px;
     height: 80px;
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow:inset 2px 2px 2px 2px rgba(255, 255, 255, 0.03);
     border-radius: 15px;
     position: fixed;
     top: 90%;
@@ -250,44 +256,3 @@ h1 {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .Page-placement {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0%;
-    margin: 0%;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: auto;
-    padding: 10px;
-    width: 300px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.13);
-    border-radius: 15px;
-    position: fixed;
-    top: 90%;
-    left: 10%;
-    transform: translateY(-50%);
-    backdrop-filter: blur(13.3px);
-    transition: height 0.5s;
-  }
-
-  li a {
-    display: block;
-    color: rgba(255, 255, 255, 0.26);
-    padding: 16px 0;
-    text-decoration: none;
-    transition: color 0.3s;
-    transition: transform 0.1s;
-    width: 60%;
-    font-size: 0;
-    font-family: sans-serif;
-  }
-}
