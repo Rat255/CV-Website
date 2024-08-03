@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV-DeanHaighton</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('/Photos/360_F_102642850_Mca9lTRDH60DQin39YwCF5Jzd15lcdoo.jpg'); /* Weird wallpaper */
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      color: #ffffff;
+    }
+
+    .hidden-button {
+      position: absolute;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: #ffffff10;
+      font-size: 18px;
+      font-family: 'Press Start 2P', cursive;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      opacity: 0; /* Hidden by default */
+    }
+
+    .hidden-button:hover {
+      color: #ff00ff;
+    }
+
+    .hidden-button:nth-child(1) {
+      top: 20%;
+      left: 30%;
+    }
+
+    .hidden-button:nth-child(2) {
+      top: 50%;
+      left: 60%;
+    }
+
+    .hidden-button:nth-child(3) {
+      top: 80%;
+      left: 40%;
+    }
+
+    .message {
+      position: absolute;
+      font-size: 24px;
+      animation: fadeInOut 5s infinite;
+      opacity: 0;
+    }
+
+    .message:nth-child(4) {
+      top: 30%;
+      left: 20%;
+      animation-delay: 1s;
+    }
+
+    .message:nth-child(5) {
+      top: 60%;
+      left: 70%;
+      animation-delay: 2s;
+    }
+
+    .message:nth-child(6) {
+      top: 40%;
+      left: 50%;
+      animation-delay: 3s;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <a class="hidden-button" id="button1" href="https://cl.gy/XWop">This Is not the way</a>
+  <a class="hidden-button" id="button2" href="Hacker.html">Ď̸̼̖͇͍͈̮͊ͅṓ̶̪̖̪͖͔̥̥̣̦̒͊̐̂͆̃͋̎̈ ̷̧͇̰̳̣͚̗̥͎͐̂͆̅̎̀̅͌̄̆͂̾͝͠͝N̷̺̓͑̿͐̒̆͑̆̄͋͑̈́́͜͝͝ŏ̶̮̜̟͗͑̈́͐͗t̵̼̟̜̼̯̭͓̖̘͙͕̺͛̽̚ ̸͚̠̯̹̯͖̘̤͕̍̓̽͌̕ͅͅC̴͖̻̾̆̏̎̀͂̃̈́͗̓̑̊͝͝l̶̯͇̼͙̙̣̱̀́̏́̒̋i̸̮͉̝̗̱̺̥̫̿̂̌́̃̿͆̂̿̍̇̕͝ͅc̵̖̻̺̱͍͇̲̻̯͖̅͌̈̍͆͝͠͠͝k̸̨̨͔̬̠͇̀͐̏̈́̍ ̵̦͉̭̗̞͊̉͝M̸̛͎̹͚͐̐̅̎̐́̌͛̅̽͑͂͠E̷̡̤̤̘̙͇͉͋͐</a>
+  <a class="hidden-button" id="button3" href="index.html">Go Back</a>
+  <div class="message">This is weird...</div>
+  <div class="message">Are you dreaming?</div>
+  <div class="message">Find the buttons...</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.hidden-button');
+      setTimeout(() => {
+        buttons.forEach(button => {
+          button.style.opacity = 1;
+        });
+      }, 3000);
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          alert('You found a hidden button!');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

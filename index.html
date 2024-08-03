@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Style.css" />
-    <script src="script. js"></script>
+    <script src="script.js"></script>
 
     <link
       rel="stylesheet"
@@ -45,7 +45,7 @@
     </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV-DeanHaighton</title>
+    <title>Haght</title>
   </head>
   <body>
     <div id="home" class="Page-placement">
@@ -103,27 +103,11 @@
 
     <div id="work" class="info-page">
       <div class="Space"></div>
-      <h1>My Work</h1>
+      <h1>My Work / Hobbies</h1>
       <div id="cards">
-        <div class="card"><span class="material-symbols-outlined">
-          code
-          </span>
-        </div>
-        <div class="card"><span class="material-symbols-outlined">
-          code
-          </span></div>
-        <div class="card"><span class="material-symbols-outlined">
-          code
-          </span></div>
-        <div class="card"><span class="material-symbols-outlined">
-          code
-          </span></div>
-        <div class="card"><span class="material-symbols-outlined">
-          code
-          </span></div>
-        <div class="card"><span class="material-symbols-outlined">
-code
-</span></div>
+        <a href="https://linktr.ee/SamplexMusic" class="card">Music Producer</a>
+        <a href="https://yuukirat.itch.io" class="card">Game Developer</a>
+        <a href="webCode.html" class="card">Web Coding</a>
       </div>
     </div>
 
@@ -131,13 +115,19 @@ code
       <div class="Space"></div>
       <h1>Contact</h1>
 
-      <a class="email" href="deandeanjay@gmail.com">Send email</a>
+      <a class="email" href="mailto:deandeanjay@gmail.com">Send email</a>
     </div>
     <script>
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         section.scrollIntoView({ behavior: "smooth" });
       }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const emailElement = document.querySelector("a.email");
+        const emailAddress = emailElement.getAttribute("href").replace("mailto:", "");
+        console.log(emailAddress); // Output the email address
+      });
     </script>
   </body>
 </html>

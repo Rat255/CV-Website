@@ -188,6 +188,7 @@ h1 {
 }
 
 .card {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,6 +200,12 @@ h1 {
   position: relative;
   width: 200px;
   transition: transform 0.1s;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+  font-weight: 100;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .card span .material-symbols-outlined {
@@ -250,10 +257,158 @@ h1 {
     border-radius: 15px;
     position: fixed;
     top: 90%;
-    left: 20%;
+    left: 30%;
     transform: translateY(-50%);
     backdrop-filter: blur(13.3px);
     transition: height 0.5s;
   }
 }
+
+@media screen and (max-width: 932px) {
+
+  .Page-placement {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .GeneralText {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .card {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    width: 200px;
+    transition: transform 0.1s;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .About-me {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 400px;
+    position: relative;
+    width: 300px;
+    transition: transform 1s;
+    padding: 0px;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 9px;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    position: fixed;
+    top: 90%;
+    left: 30%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(13.3px);
+    transition: height 0.5s;
+  }
+}
+
+
+@media screen and (max-width: 844px) {
+
+  .Page-placement {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .GeneralText {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .card {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 260px;
+    position: relative;
+    width: 200px;
+    transition: transform 0.1s;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .About-me {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 400px;
+    position: relative;
+    width: 300px;
+    transition: transform 1s;
+    padding: 0px;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 9px;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    transform: translateY(-50%);
+    backdrop-filter: blur(13.3px);
+    transition: height 0.5s;
+  }
+}
+
 
