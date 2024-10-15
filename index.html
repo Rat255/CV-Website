@@ -1,133 +1,114 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Style.css" />
-    <script src="script.js"></script>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="icon" type="image/x-icon" href="Photos/Logo Idea.png" />
-
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-    </style>
-
-    <style>
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #000000;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #88888862;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #888888;
-        box-shadow: 0 0px 40px rgba(255, 255, 255, 0.445);
-      }
-    </style>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Curriculum Vitae of Dean Haighton, a creative individual skilled in graphic design, animation, editing, audio-engineering, and coding." />
     <title>CV-DeanHaighton</title>
-  </head>
-  <body>
-    <div id="home" class="Page-placement">
-      <ul class="navbar">
-        <li>
-          <a href="#home" onclick="scrollToSection('home')"
-            ><span class="material-symbols-outlined"> home </span> Home</a
-          >
-        </li>
-        <li>
-          <a href="#about" onclick="scrollToSection('about')"
-            ><span class="material-symbols-outlined"> person </span> About</a
-          >
-        </li>
-        <li>
-          <a href="#work" onclick="scrollToSection('work')"
-            ><span class="material-symbols-outlined"> work </span> Work</a
-          >
-        </li>
-        <li>
-          <a href="#contact" onclick="scrollToSection('contact')"
-            ><span class="material-symbols-outlined"> call </span> Contact</a
-          >
-        </li>
-      </ul>
 
-      <div class="Circle-parent-container">
-        <div class="Circle">
-          <span class="material-symbols-outlined"> image </span>
-          <div class="Circle-photo"></div>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Photos/Logo Idea.png" />
+</head>
+
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home" onclick="scrollToSection('home')"><span class="material-symbols-outlined"></span> Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')"><span class="material-symbols-outlined"></span> About</a></li>
+            <li><a href="#work" onclick="scrollToSection('work')"><span class="material-symbols-outlined"></span> Work</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')"><span class="material-symbols-outlined"></span> Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home" class="Page-placement">
+            <div class="Circle-parent-container">
+                <div class="Circle">
+                    <div class="Circle-photo" role="img" aria-label="Profile photo of Dean Haighton" style="background-image: url(Photos/profile.png);"></div>
+                </div>
+                <h1 class="Name">Dean Haighton</h1>
+            </div>
         </div>
-        <h1 class="Name">Dean Haighton</h1>
-      </div>
-    </div>
 
-    <div id="about" class="info-page">
-      <div class="Space"></div>
-      <h1>About me</h1>
-      <div class="GeneralText">
-      <div class="About-me">        <p>
-        Ik ben een creatieve persoon op zoek naar een afstudeerstage;
-        gespecialiseerd in vele dingen, waaronder graphic design, animatie,
-        editing, audio-engineering en coderen. <p>Zelfs in mijn vrije tijd ben ik
-          hier volop mee bezig, samen met natuurlijk gamen.Ik ben vaak
-          verlegen, vooral bij nieuwe mensen, maar zodra ik me op mijn gemak
-          voel, kan ik behoorlijk spraakzaam zijn. </p> <Daarom>In de toekomst zie ik mezelf
-            games of muziek maken voor grote film- en gamecompanies. Ik vind het
-            geweldig om audio – en visuele elementen te combineren. Daarom volg ik
-              de opleiding Software Development waar ik mijn skills voor het mixen
-              van audio en visuals verder kan ontwikkelen. <a href="Photos/CV.pdf">Download CV</a></p> 
-      </p></div>
+        <!-- About Section -->
+        <section id="about" class="info-page">
+            <div class="Space"></div>
+            <h1>About me</h1>
+            <div class="GeneralText">
+                <div class="About-me">
+                  <p>
+                    Ik ben een creatieve persoon op zoek naar een afstudeerstage;
+                    gespecialiseerd in vele dingen, waaronder graphic design, animatie,
+                    editing, audio-engineering en coderen.
+                  </p>
+                  <p>
+                    Zelfs in mijn vrije tijd ben ik hier volop mee bezig, samen met natuurlijk gamen.
+                    Ik ben vaak verlegen, vooral bij nieuwe mensen, maar zodra ik me op mijn gemak
+                    voel, kan ik behoorlijk spraakzaam zijn.
+                  </p>
+                  <p>
+                    In de toekomst zie ik mezelf games of muziek maken voor grote film- en gamecompanies.
+                    Ik vind het geweldig om audio- en visuele elementen te combineren.
+                    Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
+                    van audio en visuals verder kan ontwikkelen.
+                  </p>
+                  <a href="Photos/CV.pdf">Download CV</a>
+                </div>
+            </div>
+        </section>
 
-      </div>
-    </div>
+        <!-- Work Section -->
+        <section id="work" class="info-page">
+            <div class="Space"></div>
+            <h1>My Work / Hobbies</h1>
+            <div id="cards">
+                <a href="https://linktr.ee/SamplexMusic" class="card">Music Producer</a>
+                <a href="https://yuukirat.itch.io" class="card">Game Developer</a>
+                <a href="webCode.html" class="card" id="web-coding-link">Web Coding (Under Construction)</a>
+            </div>
+        </section>
 
-    <div id="work" class="info-page">
-      <div class="Space"></div>
-      <h1>My Work / Hobbies</h1>
-      <div id="cards">
-        <a href="https://linktr.ee/SamplexMusic" class="card">Music Producer</a>
-        <a href="https://yuukirat.itch.io" class="card">Game Developer</a>
-        <a href="webCode.html" class="card">Web Coding</a>
-      </div>
-    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="info-page">
+            <div class="Space"></div>
+            <h1>Contact</h1>
+            <a class="email" href="mailto:deandeanjay@gmail.com">Send email</a>
+        </section>
+    </main>
 
-    <div id="contact" class="info-page">
-      <div class="Space"></div>
-      <h1>Contact</h1>
+    <footer>
+        <p>Made By Dean Haighton - With love <3</p>
+    </footer>
 
-      <a class="email" href="mailto:deandeanjay@gmail.com">Send email</a>
-    </div>
+    <!-- Smooth Scroll Functionality -->
     <script>
-      function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: "smooth" });
-      }
+      // Smooth Scroll Functionality
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+}
 
-      document.addEventListener("DOMContentLoaded", function() {
-        const emailElement = document.querySelector("a.email");
-        const emailAddress = emailElement.getAttribute("href").replace("mailto:", "");
-        console.log(emailAddress); // Output the email address
-      });
+// Intersection Observer for Animation
+const sections = document.querySelectorAll('.info-page');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); // Add visible class when in view
+            observer.unobserve(entry.target); // Stop observing once visible
+        }
+    });
+});
+
+sections.forEach(section => {
+    observer.observe(section); // Observe each section
+});
+
+
     </script>
-  </body>
+</body>
 </html>
