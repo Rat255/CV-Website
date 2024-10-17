@@ -323,7 +323,7 @@ h1 {
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    transition: width 1s ease, height 1s ease;
+    transition: width 1s ease, height 1s ease, margin 1s ease;
 }
 
 .progress-text {
