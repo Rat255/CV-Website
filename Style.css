@@ -327,6 +327,7 @@ h1 {
     transform: scale(1.1);
 }
 
+
 .seasonal-image {
     z-index: 1000;
     width: 25%;
@@ -336,7 +337,18 @@ h1 {
     pointer-events: none;
     position: relative;
     margin-left: -80px;
-    transform: translateY(20px);
+    transition: transform 1s;
+}
+
+.GeneralText .seasonal-image{
+ 
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.GeneralText:hover .seasonal-image {
+    animation: rubberBand;
+    animation-duration: 2s;
 }
 
 .seasonal-image.winter {
