@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Photos/Logo Idea.png" />
@@ -82,10 +83,43 @@
             <div class="Space"></div>
             <h1 class="no-select">My Work / Hobbies</h1>
             <div id="cards">
-                <a href="https://linktr.ee/SamplexMusic" class="card">Music Producer</a>
-                <a href="https://yuukirat.itch.io" class="card">Game Developer</a>
-                <a href="webCode.html" class="card" id="web-coding-link">Web Coding (Under Construction)</a>
+                <div class="progress-container">
+                    <div class="progress-card" id="progress-1">
+                        <div class="progress-text"><a href="https://linktr.ee/SamplexMusic" class="card2">Music Producer</a>
+                            <p>Ik ben al sinds mijn 12e bezig met muziek maken en ik vind het geweldig om dit in mijn vrije tijd te doen. Het proces is verslavend en ik heb altijd het gevoel gehad dat dit mijn plek is.</p>
+    
+                            <p>Het creëren van muziek stelt me in staat om mijn creativiteit te uiten en verschillende stijlen en genres te verkennen. Ik geniet ervan om te experimenteren met geluiden, en het resultaat is vaak een reflectie van mijn gevoelens en ervaringen.</p>
+                            
+                            <p>Het lijkt me fantastisch om al mijn vaardigheden van muziekproductie en andere interesses te combineren en iets unieks te maken. Deze passie blijft me motiveren om te groeien en nieuwe dingen te leren.</p></div>
+                    </div>
+                
+                    <div class="progress-card" id="progress-2">
+                        <div class="progress-text"><a href="https://yuukirat.itch.io" class="card2">Game Developer</a>
+                            <p>Ik heb een passie voor Unity game design en het gebruik van C#. Hoewel ik nog niet erg ervaren ben, vind ik het geweldig om te coderen en de functionaliteit van games te creëren.</p>
+    
+                            <p>Unity biedt een omgeving voor het ontwikkelen van games, waar ik verschillende kanten van game design kan verkennen. De mogelijkheid om interactieve elementen te programmeren met C# maakt het proces nog leuker.</p>
+                            
+                            <p>Het creëren van unieke functies en het zien van mijn ideeën tot leven komen is een fantastische ervaring. Mijn interesse in game design blijft groeien, en ik kijk ernaar uit om mijn vaardigheden verder te ontwikkelen.</p></div>
+                    </div>
+                
+                    <div class="progress-card" id="progress-3">
+                        <div class="progress-text"> <a href="webCode.html" class="card2">Web Coding</a>
+                            <p>Ervaring met HTML en CSS maakt het mogelijk om coole, aantrekkelijke en functionele websites te creëren. HTML biedt de structuur, terwijl CSS zorgt voor de styling en lay-out.</p>
+    
+                            <p>Daarnaast ben ik bekend met JavaScript, wat interactiviteit aan websites toevoegt. Met JavaScript kan ik dynamic elements maken, zoals interactieve formulieren en animaties.</p>
+                            
+                            <p>Ik heb ook ervaring met Java, wat een veelzijdige programmeertaal is. Dit stelt me in staat om applicaties te ontwikkelen en probleemoplossende vaardigheden te verbeteren.</p></div>
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
+            <div id="cardnames">
+                <a href="https://linktr.ee/SamplexMusic" class="card2">Music Producer</a>
+                <a href="https://yuukirat.itch.io" class="card2">Game Developer</a>
+                <a href="webCode.html" class="card2">Web Coding</a>
+            </div>
+            
         </section>
 
         <!-- Contact Section -->
@@ -100,7 +134,6 @@
         <p id="year"></p><p class="no-select"> - Made By Dean Haighton - With love <3</p>
     </footer>
 
-    <!-- Smooth Scroll Functionality -->
     <script>
       // Smooth Scroll Functionality
 function scrollToSection(sectionId) {
@@ -181,9 +214,8 @@ if (month === 11 && day >= 1 && day <= 26) { // Christmas from Dec 1 to 26
 }
 
 
-
-
 </script>
+
 </body>
 </html>
 
