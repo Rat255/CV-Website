@@ -44,26 +44,27 @@
         <section id="about" class="info-page">
             <div class="Space"></div>
             <h1>About me</h1>
-            <div class="GeneralText">
-                <div class="About-me">
-                  <p>
-                    Ik ben een creatieve persoon op zoek naar een afstudeerstage;
-                    gespecialiseerd in vele dingen, waaronder graphic design, animatie,
-                    editing, audio-engineering en coderen.
-                  </p>
-                  <p>
-                    Zelfs in mijn vrije tijd ben ik hier volop mee bezig, samen met natuurlijk gamen.
-                    Ik ben vaak verlegen, vooral bij nieuwe mensen, maar zodra ik me op mijn gemak
-                    voel, kan ik behoorlijk spraakzaam zijn.
-                  </p>
-                  <p>
-                    In de toekomst zie ik mezelf games of muziek maken voor grote film- en gamecompanies.
-                    Ik vind het geweldig om audio- en visuele elementen te combineren.
-                    Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
-                    van audio en visuals verder kan ontwikkelen.
-                  </p>
-                  <a id="Download" href="Photos/CV.pdf">Download CV</a>
+            <div class="GeneralText" id="about">
+                <div class="About-me" class="custom-cursor">
+                    <p>
+                        Ik ben een creatieve persoon op zoek naar een afstudeerstage;
+                        gespecialiseerd in vele dingen, waaronder graphic design, animatie,
+                        editing, audio-engineering en coderen.
+                    </p>
+                    <p>
+                        Zelfs in mijn vrije tijd ben ik hier volop mee bezig, samen met natuurlijk gamen.
+                        Ik ben vaak verlegen, vooral bij nieuwe mensen, maar zodra ik me op mijn gemak
+                        voel, kan ik behoorlijk spraakzaam zijn.
+                    </p>
+                    <p>
+                        In de toekomst zie ik mezelf games of muziek maken voor grote film- en gamecompanies.
+                        Ik vind het geweldig om audio- en visuele elementen te combineren.
+                        Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
+                        van audio en visuals verder kan ontwikkelen.
+                    </p>
+                    <a id="Download" href="Photos/CV.pdf">Download CV</a>
                 </div>
+                <div class="seasonal-image"></div>
             </div>
         </section>
 
@@ -139,25 +140,32 @@ const currentDate = new Date();
 const month = currentDate.getMonth(); // 0-11 (Jan=0, Dec=11)
 const day = currentDate.getDate(); // 1-31
 
-// Easter calculation
-const easterStart = new Date(currentDate.getFullYear(), 3, 1); // April 1
-const easterEnd = new Date(currentDate.getFullYear(), 3, 30); // April 30
+const seasonalImage = document.querySelector('.seasonal-image');
+seasonalImage.className = 'seasonal-image'; // Reset classes
+body.className = ''; // Reset body classes
 
-if (month >= 2 && month <= 4 && currentDate >= easterStart && currentDate <= easterEnd) {
-    body.classList.add('spring'); // Easter in spring
-} else if (month >= 5 && month <= 7) {
-    body.classList.add('summer');
-} else if (month >= 8 && month <= 10) {
-    body.classList.add('autumn'); // Default autumn
-    if (month === 9 && day >= 31) { // October 31
+if (month === 11 && day >= 25) { // Christmas
+    seasonalImage.classList.add('christmas');
+    body.classList.add('christmas');
+} else if (month >= 8 && month <= 10) { // Autumn
+    seasonalImage.classList.add('autumn');
+    body.classList.add('autumn');
+    if (month === 9 && day >= 31) { // Halloween
+        seasonalImage.classList.add('halloween');
         body.classList.remove('autumn');
-        body.classList.add('halloween'); // Halloween
+        body.classList.add('halloween');
     }
-} else if (month === 11 && day >= 25) { // December 25
-    body.classList.add('christmas'); // Christmas
+} else if (month >= 2 && month <= 4) { // Spring
+    seasonalImage.classList.add('spring');
+    body.classList.add('spring');
+} else if (month >= 5 && month <= 7) { // Summer
+    seasonalImage.classList.add('summer');
+    body.classList.add('summer');
 } else {
-    body.classList.add('winter');
+    seasonalImage.classList.add('winter');
+    body.classList.add('winter'); // Default winter
 }
+
 
 
 

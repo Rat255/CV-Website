@@ -242,6 +242,10 @@ h1 {
 
 .GeneralText {
     font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
 }
 
 .Space {
@@ -302,22 +306,63 @@ h1 {
 }
 
 .About-me {
- background-color: rgba(255, 255, 255, 0.1);
- border: 1px solid rgba(255, 255, 255, 0.05);
- border-radius: 15px;
- cursor: pointer;
- width: 800px;
- transition: transform 1s;
- text-align: center;
- padding: 14px;
- color: rgba(255, 255, 255, 0.5);
- font-family: "Roboto", sans-serif;
- font-size: 27px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    cursor: pointer;
+    width: 800px;
+    transition: transform 1s;
+    text-align: center;
+    padding: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+    margin-left: 80px;
 }
 
 .About-me:hover {
- transform: scale(1.1);
+    transform: scale(1.1);
 }
+
+.seasonal-image {
+    z-index: 1000;
+    width: 25%;
+    height: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    position: relative;
+    margin-left: -80px;
+    transform: translateY(20px);
+}
+
+.seasonal-image.winter {
+    background-image: url('Photos/Snowflake.png'); /* Winter sticker */
+}
+
+.seasonal-image.spring {
+    background-image: url('Photos/purple-flower.png'); /* Spring sticker */
+}
+
+.seasonal-image.summer {
+    background-image: url('Photos/summerleaf.png'); /* Summer sticker */
+}
+
+.seasonal-image.autumn {
+    background-image: url('Photos/autumnleaf.png'); /* Autumn sticker */
+}
+
+.seasonal-image.halloween {
+    background-image: url('Photos/PumpkinHalloween.png'); /* Halloween sticker */
+}
+
+.seasonal-image.christmas {
+    background-image: url('Photos/red-christmas-balls-png-14.png'); /* Christmas sticker */
+}
+
 
 #mobile-warning {
     display: none;
