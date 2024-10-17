@@ -139,7 +139,8 @@ li a:hover:not(.active) {
 
 .Circle-parent-container {
  display: flex;
- flex-direction: column;
+ flex-direction: row;
+ gap: 50px;
  justify-content: center;
  align-items: center;
  height: 100vh;
@@ -148,8 +149,8 @@ li a:hover:not(.active) {
 .Circle {
  background-color: rgba(255, 255, 255, 0.1);
  border: 1px solid rgba(255, 255, 255, 0.05);
- height: 300px;
- width: 300px;
+ height: 250px;
+ width: 250px;
  border-radius: 50%;
  position: relative;
  overflow: hidden;
@@ -159,8 +160,7 @@ li a:hover:not(.active) {
 }
 
 .Name {
-    margin: 0;
-    margin-bottom: 250px;
+    margin-bottom: 1000px;
 }
 
 @keyframes pulse {
