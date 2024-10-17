@@ -349,7 +349,7 @@ h1 {
 
 .GeneralText:hover .seasonal-image {
     animation: rubberBand;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .seasonal-image.winter {
