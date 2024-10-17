@@ -12,15 +12,62 @@ html {
 }
 
 body {
- scroll-behavior: smooth;
- -webkit-overflow-scrolling: touch;
- margin: 0;
- padding: 0;
- height: 100vh;
- background: linear-gradient(0deg, rgb(20, 20, 20) 50%, rgb(37, 82, 141) 100%);
- background-repeat: no-repeat;
- background-size: cover;
- overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Winter */
+body.winter {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/winter-snow.jpg');
+
+}
+
+/* Spring (Easter) */
+body.spring {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/spring-flowers.jpg');
+
+}
+
+/* Summer */
+body.summer {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/summer-beach.jpg');
+
+}
+
+/* Autumn (Halloween) */
+body.autumn {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/autumn-leaves.jpg');
+
+}
+
+/* Halloween */
+body.halloween {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/halloween-spooky.jpg');
+
+}
+
+/* Christmas */
+body.christmas {
+    background-image: 
+        linear-gradient(0deg, rgba(20, 20, 20, 1) 20%, rgba(20, 20, 20, .1) 100%),
+        url('Photos/christmas-snow.jpg');
+
 }
 
 footer {
@@ -64,9 +111,11 @@ ul {
     left: 50px;
     transform: translateY(-50%);
     backdrop-filter: blur(13.3px);
-    transition: height 0.5s;
+    transition: height 0.5s, box-shadow 0.2s;
     z-index: 100;
 }
+
+
 
 li {
  padding: 20px;
@@ -240,14 +289,15 @@ h1 {
     width: 100%;
     max-width: 250px;
     min-width: 200px;
-    transition: transform 0.1s, box-shadow 0.3s;
+    transition: box-shadow 0.3s;
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
 }
 
 .card:hover {
- transform: scale(1.1);
+ animation: headShake; 
+ animation-duration: 1s;
  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 

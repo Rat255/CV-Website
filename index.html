@@ -7,6 +7,7 @@
     <title>CV-DeanHaighton</title>
 
     <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Photos/Logo Idea.png" />
@@ -21,10 +22,10 @@
     <header>
         <nav>
           <ul>
-            <li><a href="#home" onclick="scrollToSection('home')"><i class="material-icons">home</i> Home</a></li>
-            <li><a href="#about" onclick="scrollToSection('about')"><i class="material-icons">person</i> About</a></li>
-            <li><a href="#work" onclick="scrollToSection('work')"><i class="material-icons">work</i> Work</a></li>
-            <li><a href="#contact" onclick="scrollToSection('contact')"><i class="material-icons">email</i> Contact</a></li>
+            <li class="animate__animated animate__bounceIn"><a href="#home" onclick="scrollToSection('home')"><i class="material-icons">home</i> Home</a></li>
+            <li class="animate__animated animate__bounceIn animate__delay-1s"><a href="#about" onclick="scrollToSection('about')"><i class="material-icons">person</i> About</a></li>
+            <li class="animate__animated animate__bounceIn animate__delay-2s"><a href="#work" onclick="scrollToSection('work')"><i class="material-icons">work</i> Work</a></li>
+            <li class="animate__animated animate__bounceIn animate__delay-3s"><a href="#contact" onclick="scrollToSection('contact')"><i class="material-icons">email</i> Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -131,6 +132,34 @@ showMobileWarning();
 
 // Optional: Run on window resize to check if the warning should be shown or hidden
 window.addEventListener('resize', showMobileWarning);
+
+//Seasonal Changes
+const body = document.body;
+const currentDate = new Date();
+const month = currentDate.getMonth(); // 0-11 (Jan=0, Dec=11)
+const day = currentDate.getDate(); // 1-31
+
+// Easter calculation
+const easterStart = new Date(currentDate.getFullYear(), 3, 1); // April 1
+const easterEnd = new Date(currentDate.getFullYear(), 3, 30); // April 30
+
+if (month >= 2 && month <= 4 && currentDate >= easterStart && currentDate <= easterEnd) {
+    body.classList.add('spring'); // Easter in spring
+} else if (month >= 5 && month <= 7) {
+    body.classList.add('summer');
+} else if (month >= 8 && month <= 10) {
+    body.classList.add('autumn'); // Default autumn
+    if (month === 9 && day >= 31) { // October 31
+        body.classList.remove('autumn');
+        body.classList.add('halloween'); // Halloween
+    }
+} else if (month === 11 && day >= 25) { // December 25
+    body.classList.add('christmas'); // Christmas
+} else {
+    body.classList.add('winter');
+}
+
+
 
 </script>
 </body>
