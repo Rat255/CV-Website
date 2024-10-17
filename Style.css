@@ -398,6 +398,14 @@ h1 {
     overflow: hidden;
 }
 
+#mobile-warning a {
+    color: azure;
+}
+
+#mobile-warning a:hover{
+    color: slategrey;
+}
+
 @media screen and (max-width: 900px) {
     #mobile-warning {
         display: flex;
