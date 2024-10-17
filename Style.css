@@ -398,7 +398,7 @@ h1 {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     #mobile-warning {
         display: flex;
         align-content: center;

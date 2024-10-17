@@ -16,7 +16,7 @@
 <body>
     <!-- Mobile Warning Message -->
     <div id="mobile-warning">
-      Voor een betere ervaring, bezoek deze site op een laptop of desktop computer.
+      Voor een betere ervaring, bezoek deze site op een groter scherm.
     </div>
 
     <header>
@@ -121,7 +121,7 @@ document.getElementById("year").innerHTML = d.getFullYear();
 
 function showMobileWarning() {
     // Check if the user is on a mobile device
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 900 || window.innerHeight <= 550) {
         document.getElementById("mobile-warning").style.display = "flex"; // Show the warning
     } else {
         document.getElementById("mobile-warning").style.display = "none"; // Hide the warning
