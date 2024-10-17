@@ -157,6 +157,7 @@ li a:hover:not(.active) {
  margin: auto;
  transition: transform 2s;
  animation: pulse 2s infinite;
+ z-index: 10;
 }
 
 .Name {
