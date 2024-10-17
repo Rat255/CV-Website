@@ -345,6 +345,7 @@ h1 {
  
     animation: pulse;
     animation-duration: 2s;
+    
 }
 
 .GeneralText:hover .seasonal-image {
