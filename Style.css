@@ -17,7 +17,7 @@ body {
  margin: 0;
  padding: 0;
  height: 100vh;
- background: linear-gradient(0deg, rgb(20, 20, 20) 50%, rgb(178, 92, 235) 100%);
+ background: linear-gradient(0deg, rgb(20, 20, 20) 50%, rgb(37, 82, 141) 100%);
  background-repeat: no-repeat;
  background-size: cover;
  overflow-x: hidden;
@@ -59,13 +59,13 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    position: fixed; /* Keeps the menu fixed in place */
-    top: 50%; /* Centered vertically */
-    left: 50px; /* Fixed distance from the left */
-    transform: translateY(-50%); /* Center vertically */
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
     backdrop-filter: blur(13.3px);
     transition: height 0.5s;
-    z-index: 1000; /* Higher value ensures it is on top */
+    z-index: 100;
 }
 
 li {
@@ -85,7 +85,6 @@ li a {
 li a:hover:not(.active) {
     color: white;
     transform: scale(1.2);
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
@@ -151,7 +150,7 @@ li a:hover:not(.active) {
  background: linear-gradient(
    0deg,
    rgba(20, 20, 20, 1) 0%,
-   rgba(30, 30, 30, 1) 50%,
+   rgb(20, 20, 20) 50%,
    rgba(20, 20, 20, 1) 100%
  );
  padding: 0;
@@ -167,6 +166,16 @@ li a:hover:not(.active) {
     opacity: 1;
     transform: translateY(0);
 }
+
+#Download{
+    color: azure;
+}
+
+#Download:hover{
+    color: slategrey;
+}
+
+
 
 h1,
 .GeneralText {
@@ -260,40 +269,37 @@ h1 {
  transform: scale(1.1);
 }
 
-@media screen and (max-width: 992px) {
- ul {
-   flex-direction: row;
-   width: 500px;
-   height: 80px;
-   top: 90%;
-   left: 30%;
- }
+#mobile-warning {
+    display: none;
+    background-color: rgba(20, 20, 20, 1);
+    color: var(--text-color);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 932px) {
- .GeneralText,
- .card,
- .About-me {
-   font-size: 16px;
- }
+@media screen and (max-width: 768px) {
+    #mobile-warning {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        font-size: 1rem;
+        padding-right: 500px;
 
- .About-me {
-   height: 400px;
-   width: 300px;
- }
-
- ul {
-   width: 300px;
-   height: 50px;
-   left: 30%;
- }
-}
-
-@media screen and (max-width: 844px) {
- ul {
-   width: 300px;
-   left: 5%;
- }
+    }
 }
 
 .material-symbols-outlined {

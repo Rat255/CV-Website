@@ -13,13 +13,18 @@
 </head>
 
 <body>
+    <!-- Mobile Warning Message -->
+    <div id="mobile-warning">
+      Voor een betere ervaring, bezoek deze site op een laptop of desktop computer.
+    </div>
+
     <header>
         <nav>
           <ul>
-            <li><a href="#home" onclick="scrollToSection('home')"><span class="material-symbols-outlined"></span> Home</a></li>
-            <li><a href="#about" onclick="scrollToSection('about')"><span class="material-symbols-outlined"></span> About</a></li>
-            <li><a href="#work" onclick="scrollToSection('work')"><span class="material-symbols-outlined"></span> Work</a></li>
-            <li><a href="#contact" onclick="scrollToSection('contact')"><span class="material-symbols-outlined"></span> Contact</a></li>
+            <li><a href="#home" onclick="scrollToSection('home')"><i class="material-icons">home</i> Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')"><i class="material-icons">person</i> About</a></li>
+            <li><a href="#work" onclick="scrollToSection('work')"><i class="material-icons">work</i> Work</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')"><i class="material-icons">email</i> Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -56,7 +61,7 @@
                     Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
                     van audio en visuals verder kan ontwikkelen.
                   </p>
-                  <a href="Photos/CV.pdf">Download CV</a>
+                  <a id="Download" href="Photos/CV.pdf">Download CV</a>
                 </div>
             </div>
         </section>
@@ -81,7 +86,7 @@
     </main>
 
     <footer>
-        <p>Made By Dean Haighton - With love <3</p>
+        <p id="year"></p><p> - Made By Dean Haighton - With love <3</p>
     </footer>
 
     <!-- Smooth Scroll Functionality -->
@@ -98,17 +103,36 @@ const sections = document.querySelectorAll('.info-page');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible'); // Add visible class when in view
-            observer.unobserve(entry.target); // Stop observing once visible
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
         }
     });
 });
 
 sections.forEach(section => {
-    observer.observe(section); // Observe each section
+    observer.observe(section);
 });
 
+// Shows year on Footer
+const d = new Date();
+document.getElementById("year").innerHTML = d.getFullYear();
 
-    </script>
+function showMobileWarning() {
+    // Check if the user is on a mobile device
+    if (window.innerWidth <= 768) {
+        document.getElementById("mobile-warning").style.display = "flex"; // Show the warning
+    } else {
+        document.getElementById("mobile-warning").style.display = "none"; // Hide the warning
+    }
+}
+
+// Run on page load
+showMobileWarning();
+
+// Optional: Run on window resize to check if the warning should be shown or hidden
+window.addEventListener('resize', showMobileWarning);
+
+</script>
 </body>
 </html>
+
