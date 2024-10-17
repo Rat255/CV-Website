@@ -375,6 +375,13 @@ h1 {
     background-image: url('Photos/red-christmas-balls-png-14.png'); /* Christmas sticker */
 }
 
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 
 #mobile-warning {
     display: none;

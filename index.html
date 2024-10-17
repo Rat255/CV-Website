@@ -22,7 +22,7 @@
 
 <body>
     <!-- Mobile Warning Message -->
-    <div id="mobile-warning">
+    <div class="no-select" id="mobile-warning">
       Voor een betere ervaring, bezoek deze site op een groter scherm of maak je scherm groter.
       <a href="https://www.linkedin.com/in/dean-haighton-5a476424a/">LinkedIn</a>
       <a href="mailto:deandeanjay@gmail.com">Send email</a>
@@ -31,10 +31,10 @@
     <header>
         <nav>
           <ul>
-            <li class="animate__animated animate__fadeInDown"><a href="#home" onclick="scrollToSection('home')"><i class="material-icons">home</i> Home</a></li>
-            <li class="animate__animated animate__fadeInRight"><a href="#about" onclick="scrollToSection('about')"><i class="material-icons">person</i> About</a></li>
-            <li class="animate__animated animate__fadeInLeft"><a href="#work" onclick="scrollToSection('work')"><i class="material-icons">work</i> Work</a></li>
-            <li class="animate__animated animate__fadeInUp"><a href="#contact" onclick="scrollToSection('contact')"><i class="material-icons">email</i> Contact</a></li>
+            <li class="animate__animated animate__fadeInDown" class="no-select"><a href="#home" onclick="scrollToSection('home')"><i class="material-icons">home</i> Home</a></li>
+            <li class="animate__animated animate__fadeInRight" class="no-select"><a href="#about" onclick="scrollToSection('about')"><i class="material-icons">person</i> About</a></li>
+            <li class="animate__animated animate__fadeInLeft" class="no-select"><a href="#work" onclick="scrollToSection('work')"><i class="material-icons">work</i> Work</a></li>
+            <li class="animate__animated animate__fadeInUp" class="no-select"><a href="#contact" onclick="scrollToSection('contact')"><i class="material-icons">email</i> Contact</a></li>
           </ul>
         </nav>
     </header>
@@ -45,14 +45,14 @@
                 <div class="Circle">
                     <div class="Circle-photo" role="img" aria-label="Profile photo of Dean Haighton" style="background-image: url(Photos/profile.png);"></div>
                 </div>
-                <h1 class="Name" translate="no">Dean Haighton</h1>
+                <h1 class="no-select" class="Name" translate="no">Dean Haighton</h1>
             </div>
         </div>
 
         <!-- About Section -->
         <section id="about" class="info-page">
             <div class="Space"></div>
-            <h1>About me</h1>
+            <h1 class="no-select">About me</h1>
             <div class="GeneralText" id="about">
                 <div class="About-me" class="custom-cursor">
                     <p>
@@ -71,7 +71,7 @@
                         Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
                         van audio en visuals verder kan ontwikkelen.
                     </p>
-                    <a id="Download" href="Photos/CV.pdf">Download CV</a>
+                    <a class="no-select" id="Download" href="Photos/CV.pdf">Download CV</a>
                 </div>
                 <div class="seasonal-image"></div>
             </div>
@@ -80,7 +80,7 @@
         <!-- Work Section -->
         <section id="work" class="info-page">
             <div class="Space"></div>
-            <h1>My Work / Hobbies</h1>
+            <h1 class="no-select">My Work / Hobbies</h1>
             <div id="cards">
                 <a href="https://linktr.ee/SamplexMusic" class="card">Music Producer</a>
                 <a href="https://yuukirat.itch.io" class="card">Game Developer</a>
@@ -91,13 +91,13 @@
         <!-- Contact Section -->
         <section id="contact" class="info-page">
             <div class="Space"></div>
-            <h1>Contact</h1>
+            <h1 class="no-select">Contact</h1>
             <a class="email" href="mailto:deandeanjay@gmail.com">Send email</a>
         </section>
     </main>
 
     <footer>
-        <p id="year"></p><p> - Made By Dean Haighton - With love <3</p>
+        <p id="year"></p><p class="no-select"> - Made By Dean Haighton - With love <3</p>
     </footer>
 
     <!-- Smooth Scroll Functionality -->
