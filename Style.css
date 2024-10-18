@@ -328,12 +328,11 @@ h1 {
 }
 
 .progress-card .icon {
-    font-size: 3rem;
-    color: var(--text-color);
+    font-size: 2rem;
+    color: var(--background-color);
     position: absolute;
     opacity: 1;
     transition: opacity 0.5s ease;
-    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.6); /* Adjust shadow parameters as needed */
 }
 
 .progress-card.active .icon {
