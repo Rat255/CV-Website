@@ -315,6 +315,7 @@ h1 {
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 15px;
+    cursor: pointer;
     height: 500px;
     width: 80px;
     max-width: 500px;
@@ -324,6 +325,19 @@ h1 {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     transition: width 1s ease, height 1s ease, margin 1s ease;
+}
+
+.progress-card .icon {
+    font-size: 3rem;
+    color: var(--text-color);
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.6); /* Adjust shadow parameters as needed */
+}
+
+.progress-card.active .icon {
+    opacity: 0;
 }
 
 .progress-text {
@@ -337,12 +351,12 @@ h1 {
     font-size: 1rem;
 }
 
-.progress-card:hover {
+.progress-card.active {
     width: 400px;
     height: 500px;
 }
 
-.progress-card:hover .progress-text {
+.progress-card.active .progress-text {
     opacity: 1;
     width: 400px;
     height: 500px;

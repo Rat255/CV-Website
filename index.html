@@ -85,6 +85,7 @@
             <div id="cards">
                 <div class="progress-container">
                     <div class="progress-card" id="progress-1">
+                        <i class="material-icons icon">headset</i>
                         <div class="progress-text"><a href="https://linktr.ee/SamplexMusic" class="card2">Music Producer</a>
                             <p>Ik ben al sinds mijn 12e bezig met muziek maken en ik vind het geweldig om dit in mijn vrije tijd te doen. Het proces is verslavend en ik heb altijd het gevoel gehad dat dit mijn plek is.</p>
     
@@ -94,6 +95,7 @@
                     </div>
                 
                     <div class="progress-card" id="progress-2">
+                        <i class="material-icons icon">gamepad</i>
                         <div class="progress-text"><a href="https://yuukirat.itch.io" class="card2">Game Developer</a>
                             <p>Ik heb een passie voor Unity game design en het gebruik van C#. Hoewel ik nog niet erg ervaren ben, vind ik het geweldig om te coderen en de functionaliteit van games te creëren.</p>
     
@@ -103,6 +105,7 @@
                     </div>
                 
                     <div class="progress-card" id="progress-3">
+                        <i class="material-icons icon">code</i>
                         <div class="progress-text"> <a href="webCode.html" class="card2">Web Coding</a>
                             <p>Ervaring met HTML en CSS maakt het mogelijk om coole, aantrekkelijke en functionele websites te creëren. HTML biedt de structuur, terwijl CSS zorgt voor de styling en lay-out.</p>
     
@@ -213,6 +216,19 @@ if (month === 11 && day >= 1 && day <= 26) { // Christmas from Dec 1 to 26
     body.classList.add('winter'); // Default winter
 }
 
+    // Select all progress cards
+    const progressCards = document.querySelectorAll('.progress-card');
+
+    // Add event listeners to each card
+    progressCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Remove 'active' class from all cards
+            progressCards.forEach(c => c.classList.remove('active'));
+            
+            // Add 'active' class to the clicked card
+            this.classList.add('active');
+        });
+    });
 
 </script>
 
