@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const seasonalImage = document.querySelector('.seasonal-image');
     if (seasonalImage) {
         seasonalImage.className = 'seasonal-image'; // Reset classes
-        body.className = ''; // Reset body classes
+        body.className = ''; // Reset body
     
         if (month === 11 && day >= 1 && day <= 26) { // Christmas from Dec 1 to 26
             seasonalImage.classList.add('christmas');
@@ -99,15 +99,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Element with class 'seasonal-image' not found.");
     }
 
-    // Progress Cards Click Event
+    //Cards Click Event
     const progressCards = document.querySelectorAll('.progress-card');
     if (progressCards.length > 0) {
         progressCards.forEach(card => {
             card.addEventListener('click', function() {
-                // Remove 'active' class from all cards
+
                 progressCards.forEach(c => c.classList.remove('active'));
                 
-                // Add 'active' class to the clicked card
                 this.classList.add('active');
             });
         });
@@ -117,9 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
 
-// Form feedback display
+//feedback display
     document.getElementById('contact-form').addEventListener('submit', function (event) {
-        // Show loading message while submitting
+        //loading message
         document.getElementById('feedback').innerText = 'Sending your message...';
         document.getElementById('feedback').style.display = 'block';
     });
