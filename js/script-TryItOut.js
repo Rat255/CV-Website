@@ -86,3 +86,22 @@ document.addEventListener('click', (e) => {
     }
 });
 
+    // Mobile Warning
+    function showMobileWarning() {
+        const mobileWarning = document.getElementById("mobile-warning");
+        if (mobileWarning) {
+            if (window.innerWidth <= 900 || window.innerHeight <= 550) {
+                mobileWarning.style.display = "flex"; // Show the warning
+            } else {
+                mobileWarning.style.display = "none"; // Hide the warning
+            }
+        } else {
+            console.log("Element with ID 'mobile-warning' not found.");
+        }
+    }
+    
+    // Run on page load
+    showMobileWarning();
+
+    // Run on window resize to check if the warning should be shown or hidden
+    window.addEventListener('resize', showMobileWarning);
