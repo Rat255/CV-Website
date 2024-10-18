@@ -514,6 +514,7 @@ color: slategray;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    gap: 20px;
 }
 
 #mobile-warning a {
