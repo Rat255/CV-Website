@@ -333,11 +333,16 @@ h1 {
     color: var(--background-color);
     position: absolute;
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.2s ease;
 }
 
 .progress-card.active .icon {
     opacity: 0;
+}
+
+.progress-card:hover .icon {
+    color: var(--text-color);
+    transform: scale(1.1);
 }
 
 .progress-text {
