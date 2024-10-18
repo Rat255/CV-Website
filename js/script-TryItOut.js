@@ -8,7 +8,7 @@ const htmlSuggestions = document.getElementById('html-suggestions');
 const cssSuggestions = document.getElementById('css-suggestions');
 const jsSuggestions = document.getElementById('js-suggestions');
 
-// Code suggestions arrays
+
 const htmlWords = ['<!DOCTYPE html>', '<html>', '<head>', '<body>', '<h1>', '<p>', '<div>', '<span>', '<a>', '<img>', '<script>', '<style>'];
 const cssWords = ['color', 'background', 'font-size', 'margin', 'padding', 'border', 'display', 'position', 'width', 'height'];
 const jsWords = ['console.log()', 'document.getElementById()', 'addEventListener()', 'querySelector()', 'setTimeout()', 'fetch()', 'Array', 'Object', 'Promise'];
@@ -36,7 +36,7 @@ function updatePreview() {
     previewDoc.close();
 }
 
-// Update suggestions based on input
+
 function showSuggestions(input, suggestionsElement, words) {
     const value = input.value;
     suggestionsElement.innerHTML = '';
@@ -63,7 +63,7 @@ function showSuggestions(input, suggestionsElement, words) {
     }
 }
 
-// Event listeners for input and suggestions
+
 htmlInput.addEventListener('input', () => {
     showSuggestions(htmlInput, htmlSuggestions, htmlWords);
     updatePreview();
@@ -77,7 +77,7 @@ jsInput.addEventListener('input', () => {
     updatePreview();
 });
 
-// Hide suggestions when clicking outside
+
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.input-container')) {
         htmlSuggestions.style.display = 'none';
@@ -86,7 +86,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-    // Mobile Warning
+ 
     function showMobileWarning() {
         const mobileWarning = document.getElementById("mobile-warning");
         if (mobileWarning) {

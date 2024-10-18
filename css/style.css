@@ -107,7 +107,7 @@ ul {
     height: 500px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
+    border-radius: 5px;
     position: fixed;
     top: 50%;
     left: 50px;
@@ -262,7 +262,7 @@ h1 {
 .email {
  background-color: rgba(255, 255, 255, 0.1);
  border: 1px solid rgba(255, 255, 255, 0.05);
- border-radius: 15px;
+ border-radius: 5px;
  padding: 14px 25px;
  text-align: center;
  display: inline-block;
@@ -315,7 +315,7 @@ h1 {
     justify-content: center;
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     height: 500px;
     width: 80px;
@@ -417,7 +417,7 @@ color: slategray;
 .About-me {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     width: 800px;
     transition: transform 1s;
@@ -549,7 +549,7 @@ color: slategray;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: var(--text-color);
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 16px;
     width: 800px;
 }
@@ -559,7 +559,7 @@ color: slategray;
     background-color: #007BFF;
     color: var(--text-color);
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
