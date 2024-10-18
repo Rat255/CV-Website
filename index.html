@@ -6,12 +6,12 @@
     <meta name="description" content="Curriculum Vitae of Dean Haighton, a creative individual skilled in graphic design, animation, editing, audio-engineering, and coding." />
     <title>CV-DeanHaighton</title>
 
-    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="Photos/Logo Idea.png" />
+    <link rel="icon" type="image/x-icon" href="images/Logo Idea.png" />
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -44,7 +44,7 @@
         <div id="home" class="Page-placement">
             <div class="Circle-parent-container">
                 <div class="Circle">
-                    <div class="Circle-photo" role="img" aria-label="Profile photo of Dean Haighton" style="background-image: url(Photos/profile.png);"></div>
+                    <div class="Circle-photo" role="img" aria-label="Profile photo of Dean Haighton" style="background-image: url(images/profile.png);"></div>
                 </div>
                 <h1 class="animate__animated animate__fadeInLeft" class="no-select" class="Name" translate="no">Dean Haighton</h1>
             </div>
@@ -72,7 +72,7 @@
                         Daarom volg ik de opleiding Software Development, waar ik mijn skills voor het mixen
                         van audio en visuals verder kan ontwikkelen.
                     </p>
-                    <a class="no-select" id="Download" href="Photos/CV.pdf">Download CV</a>
+                    <a class="no-select" id="Download" href="images/CV.pdf">Download CV</a>
                 </div>
                 <div class="seasonal-image"></div>
             </div>
@@ -84,7 +84,18 @@
             <h1 class="no-select">My Work / Hobbies</h1>
             <div id="cards">
                 <div class="progress-container">
-                    <div class="progress-card" id="progress-1">
+                    <div class="progress-card active" id="progress-1">
+                        <i class="material-icons icon">trending_up</i>
+                        <div class="progress-text">
+                            <a href="https://www.linkedin.com/in/dean-haighton-5a476424a/" class="card2">Skills?</a>
+                            <p>Skills zijn vaardigheden of dingen die je kunt doen, zoals goed praten met mensen, schrijven, of iets maken, zoals een website of een tekening.</p>
+
+                            <p>Ik geloof dat iedereen nieuwe skills kan leren. Je moet wel de wil hebben om het te proberen en het kost tijd, vooral als je iets voor de eerste keer doet.</p>
+
+                            <p>Geef niet op en zeg niet dat je niets kunt. Denk eraan: "Nooit geschoten is altijd mis." Met geduld en doorzetten kun je veel bereiken!</p>
+                        </div>
+                    </div>
+                    <div class="progress-card" id="progress-2">
                         <i class="material-icons icon">headset</i>
                         <div class="progress-text"><a href="https://linktr.ee/SamplexMusic" class="card2">Music Producer</a>
                             <p>Ik ben al sinds mijn 12e bezig met muziek maken en ik vind het geweldig om dit in mijn vrije tijd te doen. Het proces is verslavend en ik heb altijd het gevoel gehad dat dit mijn plek is.</p>
@@ -94,7 +105,7 @@
                             <p>Het lijkt me fantastisch om al mijn vaardigheden van muziekproductie en andere interesses te combineren en iets unieks te maken. Deze passie blijft me motiveren om te groeien en nieuwe dingen te leren.</p></div>
                     </div>
                 
-                    <div class="progress-card" id="progress-2">
+                    <div class="progress-card" id="progress-3">
                         <i class="material-icons icon">gamepad</i>
                         <div class="progress-text"><a href="https://yuukirat.itch.io" class="card2">Game Developer</a>
                             <p>Ik heb een passie voor Unity game design en het gebruik van C#. Hoewel ik nog niet erg ervaren ben, vind ik het geweldig om te coderen en de functionaliteit van games te creëren.</p>
@@ -104,7 +115,7 @@
                             <p>Het creëren van unieke functies en het zien van mijn ideeën tot leven komen is een fantastische ervaring. Mijn interesse in game design blijft groeien, en ik kijk ernaar uit om mijn vaardigheden verder te ontwikkelen.</p></div>
                     </div>
                 
-                    <div class="progress-card" id="progress-3">
+                    <div class="progress-card" id="progress-4">
                         <i class="material-icons icon">code</i>
                         <div class="progress-text"> <a href="webCode.html" class="card2">Web Coding</a>
                             <p>Ervaring met HTML en CSS maakt het mogelijk om coole, aantrekkelijke en functionele websites te creëren. HTML biedt de structuur, terwijl CSS zorgt voor de styling en lay-out.</p>
@@ -118,120 +129,39 @@
                 </div>
             </div>
             <div id="cardnames">
-                <a href="https://linktr.ee/SamplexMusic" class="card2">Music Producer</a>
-                <a href="https://yuukirat.itch.io" class="card2">Game Developer</a>
-                <a href="webCode.html" class="card2">Web Coding</a>
+                <a href="https://www.linkedin.com/in/dean-haighton-5a476424a/" class="card2">linkedin.com</a>
+                <i class="material-icons" style="font-size:5px">fiber_manual_record</i>
+                <a href="https://linktr.ee/SamplexMusic" class="card2">linktr.ee</a>
+                <i class="material-icons" style="font-size:5px">fiber_manual_record</i>
+                <a href="https://yuukirat.itch.io" class="card2">itch.io</a>
+                <i class="material-icons" style="font-size:5px">fiber_manual_record</i>
+                <a href="webCode.html" class="card2">webCode.html</a>
             </div>
             
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="info-page">
-            <div class="Space"></div>
-            <h1 class="no-select">Contact</h1>
-            <a class="email" href="mailto:deandeanjay@gmail.com">Send email</a>
-        </section>
+<!-- Contact Section -->
+<section id="contact" class="info-page">
+    <div class="Space"></div>
+    <h1 class="no-select">Contact</h1>
+
+    <!-- Display feedback -->
+    <div class="feedback" id="feedback" style="display: none;"></div>
+
+    <!-- Contact Form with Formspree -->
+    <form action="https://formspree.io/f/myzyyqjb" method="POST" class="contact-form" id="contact-form">
+        <input type="text" name="name" id="name" placeholder="Your Name" required aria-required="true">
+        <input type="email" name="email" id="email" placeholder="Your Email" required aria-required="true">
+        <textarea name="message" id="message" placeholder="Your Message" required aria-required="true" style="resize: none; height: 150px; width: 100%; box-sizing: border-box;"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
     </main>
 
     <footer>
         <p id="year"></p><p class="no-select"> - Made By Dean Haighton - With love <3</p>
     </footer>
-
-    <script>
-      // Smooth Scroll Functionality
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
-}
-
-// Intersection Observer for Animation
-const sections = document.querySelectorAll('.info-page');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-});
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-// Shows year on Footer
-const d = new Date();
-document.getElementById("year").innerHTML = d.getFullYear();
-
-function showMobileWarning() {
-    // Check if the user is on a mobile device
-    if (window.innerWidth <= 900 || window.innerHeight <= 550) {
-        document.getElementById("mobile-warning").style.display = "flex"; // Show the warning
-    } else {
-        document.getElementById("mobile-warning").style.display = "none"; // Hide the warning
-    }
-}
-
-// Run on page load
-showMobileWarning();
-
-// Optional: Run on window resize to check if the warning should be shown or hidden
-window.addEventListener('resize', showMobileWarning);
-
-//Seasonal Changes
-const body = document.body;
-const currentDate = new Date();
-const month = currentDate.getMonth(); // 0-11 (Jan=0, Dec=11)
-const day = currentDate.getDate(); // 1-31
-
-const seasonalImage = document.querySelector('.seasonal-image');
-seasonalImage.className = 'seasonal-image'; // Reset classes
-body.className = ''; // Reset body classes
-
-if (month === 11 && day >= 1 && day <= 26) { // Christmas from Dec 1 to 26
-    seasonalImage.classList.add('christmas');
-    body.classList.add('christmas');
-} else if (month >= 8 && month <= 10) { // Autumn
-    seasonalImage.classList.add('autumn');
-    body.classList.add('autumn');
-    if (month === 9 && day >= 20 && day <= 31) { // Halloween from Oct 20 to Nov 1
-        seasonalImage.classList.add('halloween');
-        body.classList.remove('autumn');
-        body.classList.add('halloween');
-    }
-    if (month === 10 && day === 1) { // Remove Halloween on Nov 1
-        seasonalImage.classList.remove('halloween');
-        body.classList.remove('halloween');
-        body.classList.add('autumn'); // Revert to autumn after Halloween
-    }
-} else if (month >= 2 && month <= 4) { // Spring
-    seasonalImage.classList.add('spring');
-    body.classList.add('spring');
-} else if (month >= 5 && month <= 7) { // Summer
-    seasonalImage.classList.add('summer');
-    body.classList.add('summer');
-} else {
-    seasonalImage.classList.add('winter');
-    body.classList.add('winter'); // Default winter
-}
-
-    // Select all progress cards
-    const progressCards = document.querySelectorAll('.progress-card');
-
-    // Add event listeners to each card
-    progressCards.forEach(card => {
-        card.addEventListener('click', function() {
-            // Remove 'active' class from all cards
-            progressCards.forEach(c => c.classList.remove('active'));
-            
-            // Add 'active' class to the clicked card
-            this.classList.add('active');
-        });
-    });
-
-</script>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
 
