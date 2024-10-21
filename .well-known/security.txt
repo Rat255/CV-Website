@@ -1,2 +1,5 @@
 # security.txt
+# Security Contact Information
+
 Contact: mailto:deandeanjay@gmail.com
+Preferred-Languages: en, nl
