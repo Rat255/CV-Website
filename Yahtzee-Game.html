@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style-Yahtzee-game.css" />
+  <title>Yahtzee Game</title>
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <div id="name1">Player 1</div>
+      <div id="name2">Player 2</div>
+      <div>Turn: <span id="turn">Player 1</span></div>
+      <div>Rolls left: <span id="rolls">3</span></div>
+      <button onclick="roll()">ROLL!</button>
+    </div>
+    
+    <div class="scores">
+      <div class="player" id="player1">
+        <h3>Player 1 Scores</h3>
+        <p>Aces: <span id="aces--p1"></span></p>
+        <p>Twos: <span id="twos--p1"></span></p>
+        <p>Threes: <span id="threes--p1"></span></p>
+        <p>Top Total: <span id="top--p1--total"></span></p>
+      </div>
+      <div class="player" id="player2">
+        <h3>Player 2 Scores</h3>
+        <p>Aces: <span id="aces--p2"></span></p>
+        <p>Twos: <span id="twos--p2"></span></p>
+        <p>Threes: <span id="threes--p2"></span></p>
+        <p>Top Total: <span id="top--p2--total"></span></p>
+      </div>
+    </div>
+    
+    <div class="table">
+      <img class="dice" id="die1" src="images/Dice-1.png" onclick="lockDie(0)">
+      <img class="dice" id="die2" src="images/Dice-1.png" onclick="lockDie(1)">
+      <img class="dice" id="die3" src="images/Dice-1.png" onclick="lockDie(2)">
+      <img class="dice" id="die4" src="images/Dice-1.png" onclick="lockDie(3)">
+      <img class="dice" id="die5" src="images/Dice-1.png" onclick="lockDie(4)">
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

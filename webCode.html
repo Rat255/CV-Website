@@ -1,80 +1,56 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Coding - Under Construction</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background-color: #f0f0f0;
-        font-family: 'Comic Sans MS', sans-serif;
-        text-align: center;
-        padding: 50px;
-      }
+    <meta name="description" content="Curriculum Vitae of Dean Haighton, a creative individual skilled in graphic design, animation, editing, audio-engineering, and coding." />
+    <title>CV-DeanHaighton</title>
 
-      .container {
-        background-color: white;
-        border-radius: 10px;
-        padding: 40px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        display: inline-block;
-        max-width: 600px;
-        margin: 0 auto;
-      }
+    <link rel="stylesheet" href="css/style-webCode.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-      h1 {
-        color: #ff5722;
-        font-size: 36px;
-      }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/Logo Idea.png" />
 
-      p {
-        color: #333;
-        font-size: 18px;
-        margin-top: 20px;
-      }
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'nl',
+                includedLanguages: 'nl,en,de', // Voeg hier de talen toe die je wilt ondersteunen
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <a href="index.html" class="back-arrow">
+        <img src="images/109618.png" alt="Back" class="arrow-icon">
+    </a>
 
-      .fun-message {
-        margin-top: 40px;
-        color: #666;
-        font-style: italic;
-      }
-
-      .fun-emoji {
-        font-size: 48px;
-      }
-
-      .back-home {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 10px 20px;
-        background-color: #ff5722;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-
-      .back-home:hover {
-        background-color: #e64a19;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Oops! This Page is Still Under Construction 🚧</h1>
-      <p>
-        Hey there! It looks like you're trying to check out my web coding work.
-        Unfortunately, I'm currently still working on it.
-      </p>
-      <p class="fun-message">
-        Don't worry though, I'm fighting off bugs 🐛 and crafting something awesome!
-      </p>
-      <div class="fun-emoji">💻🔧</div>
-      <a href="index.html" class="back-home">Back to Home</a>
+    <div class="banner">
+        <img src="images/Cracking-the-code.jpg" alt="Banner Afbeelding" class="banner-image">
+        <h1>WebCode</h1>
+        <p>Hier plaats ik al mijn code snippets die ik heb gemaakt door de jaren heen</p>
     </div>
-  </body>
+    
+    <div class="container">
+        <!-- Voeg links naar elke code snippet pagina toe met een afbeelding en hover-titel -->
+        <a href="Yahtzee-Game.html" class="snippet">
+            <img src="images/Yahtzee.png" alt="Snippet 1">
+            <div class="overlay">Yahtzee-Game</div>
+        </a>
+        <a href="TryItOut.html" class="snippet">
+            <img src="images/MiniEditor.png" alt="Snippet 2">
+            <div class="overlay">TryItOut</div>
+        </a>
+        <a href="pong.html" class="snippet">
+            <img src="images/pong.png" alt="Snippet 3">
+            <div class="overlay">Ping-Pong</div>
+        </a>
+        <!-- Voeg meer snippets toe indien nodig -->
+    </div>
+</body>
+</html>
 </html>

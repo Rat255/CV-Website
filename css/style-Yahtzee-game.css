@@ -1,0 +1,102 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(20, 20, 20);
+  }
+  
+  /* Container Styling */
+  .content {
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .header div {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .header button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Scores Section */
+  .scores {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .player {
+    width: 45%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+  }
+  
+  .player h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .player p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    padding: 5px 0;
+  }
+  
+  /* Dice Table */
+  .table {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    border-top: 2px solid #ddd;
+  }
+  
+  .dice {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .dice:hover {
+    transform: scale(1.1);
+  }
