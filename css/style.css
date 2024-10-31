@@ -5,10 +5,13 @@
     --card-bg: rgba(255, 255, 255, 0.1);
     --card-border: rgba(255, 255, 255, 0.05);
     --progress-bg-color: rgba(255, 255, 255, 0.1);
-    --progress-width: 2px;  
+    --progress-width: 2px; 
 }
 
-/* Smooth Scroll */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
 html {
  scroll-behavior: smooth;
 }
@@ -131,7 +134,7 @@ li a {
     font-family: sans-serif;
     font-size: 1rem;
     text-decoration: none;
-    transition: color 0.3s, transform 0.1s, background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 li a:hover:not(.active) {
